@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { EffectComposer } from "@react-three/postprocessing";
+import { EffectComposer, SMAA } from "@react-three/postprocessing";
 import SobelEdge from "./SobelEdge/SobleEdge";
 
 function Suzi() {
@@ -63,8 +63,9 @@ function App() {
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
             <pointLight position={[-10, -10, -10]}/>
             
-            <EffectComposer multisampling={8}>
+            <EffectComposer multisampling={0}>
                 <SobelEdge />
+                <SMAA />
             </EffectComposer>
 
             <OrbitControls />
