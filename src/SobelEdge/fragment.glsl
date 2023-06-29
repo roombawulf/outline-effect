@@ -83,6 +83,8 @@ void main() {
 
 	gl_FragColor = vec4( finalColor, 1.0 );
     
+    // threejs r154 renamed this to <colorspace_fragment>
+    // https://github.com/mrdoob/three.js/pull/26206
     #include <encodings_fragment>
 
 }
