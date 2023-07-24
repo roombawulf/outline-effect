@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@react-three/drei':
     specifier: ^9.77.0
@@ -25,6 +29,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  sdf-morph:
+    specifier: 'link:'
+    version: 'link:'
   three:
     specifier: ^0.153.0
     version: 0.153.0
